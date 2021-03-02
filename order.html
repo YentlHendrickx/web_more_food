@@ -49,7 +49,7 @@
         <h1 class="text-primary text-center pb-5">Place your order!</h1>
         <p>No cookies are used on this site. Expect M<i class="fas fa-utensils"></i>RE food ensures the security
             and protection of the personal information that you submit via the form below.</p>
-        <form action="https://mcloots.sinners.be/form.php" method="post">
+        <form action="" method="post" data-netlify="true" name="expect-more-food-form" data-netlify-recaptcha="true">
             <div class="row">
                 <div class="form-group col-lg-6">
                     <div class="row">
@@ -119,6 +119,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="my-2">
+                <div data-netlify-recaptcha="true"></div>
             </div>
         </form>
     </main>
