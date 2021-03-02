@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expect more food - Order</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-secondary">
+<div class="container bg-light px-0 d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md col-12">
+            <a class="navbar-brand mr-auto" href="#">Expect M<i class="fas fa-utensils text-primary"></i>RE food</a>
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <main class="px-3 pt-5 flex-grow-1">
+        <h1 class="text-primary text-center pb-5">Place your order!</h1>
+        <p>No cookies are used on this site. Expect M<i class="fas fa-utensils"></i>RE food ensures the security
+            and protection of the personal information that you submit via the form below.</p>
+        <form action="https://mcloots.sinners.be/form.php" method="post">
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <div class="row">
+                        <label for="name" class="col-form-label col-md-3">Name</label>
+                        <div class="col-md-9">
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <div class="row">
+                        <label for="mail" class="col-form-label col-md-3">Email</label>
+                        <div class="col-md-9">
+                            <input type="email" id="mail" name="mail" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <div class="row">
+                        <label for="phone" class="col-form-label col-md-3">Phone</label>
+                        <div class="col-md-9">
+                            <input type="tel" id="phone" name="phone" class="form-control" required
+                                   pattern="0(\d{2,3}\/\d{6}|\d\/\d{7})">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <div class="row">
+                        <label for="food" class="col-form-label col-md-3">Food</label>
+                        <div class="col-md-9">
+                            <select class="custom-select" id="food" name="food">
+                                <option value="pizza">Pizza (€ 7.95)</option>
+                                <option value="sandwich">Sandwich (€ 3.95)</option>
+                                <option value="salad">Salad (€ 5.95)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <div class="row">
+                        <label class="col-md-3">Payment</label>
+                        <div class="col-md-9">
+                            <div class="form-check">
+                                <input type="radio" id="bankcard" name="payment"
+                                       class="form-check-input" value="bank card">
+                                <label class="form-check-label" for="bankcard">Bank card</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="studentbill" name="payment"
+                                       class="form-check-input" value="student bill" checked>
+                                <label class="form-check-label" for="studentbill">Student bill</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-3">
+                            <button type="submit" class="btn btn-primary">Order food</button>
+                            <button type="reset" class="btn btn-outline-secondary">Clear values</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <footer class="bg-dark text-light h-auto col-12 d-flex justify-content-center align-items-center">
+            <p><i class="fas fa-copyright"></i> Expect M<i class="fas fa-utensils text-primary"></i>RE food - 2021</p>
+        </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

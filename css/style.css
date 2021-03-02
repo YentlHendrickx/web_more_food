@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Rock+Salt&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    /*margin-bottom: 3rem;*/
+    /*color: #007bff;*/
+    /*text-align: center;*/
+}
+
+option:nth-child(odd) {
+    background-color: rgba(50, 110, 160, 0.25);
+}
+
+input:invalid {
+    background-color: rgba(200, 0, 0, 0.15);
+}
+
+a.nav-link:hover {
+    background-color: #007bff;
+    border-radius: 0.25rem;
+}
+
+i[class*="utensils"] {
+    /*color: #007bff;*/
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+label[for]::first-letter {
+    font-weight: bold;
+    text-decoration: underline;
+}
